@@ -22,5 +22,6 @@ type Query{
 type Mutation {
     addDeck(name: String! ):Deck
     addCard(deckId: String!, question:String!,answer:String! ):Card
+    deleteDeck(_id:ID!):Deck
 }
 `;

@@ -29,6 +29,10 @@ exports.resolvers = {
         answer
       }).save();
       return newCard;
+    },
+    deleteDeck: async (root, { _id }, { Deck }) => {
+      console.log("deleteDeck");
+      return await Deck.findOneAndRemove({ _id });
     }
   }
 };
