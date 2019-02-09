@@ -6,7 +6,8 @@
   "scripts": {
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+    "dev": "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\"",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,5 +26,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
+  },
+  "engines": {
+    "node": "v8.11.3"
   }
 }
